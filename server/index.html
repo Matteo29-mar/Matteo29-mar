@@ -7,32 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>File Manager</h1>
+    <h1>Server Manager</h1>
 
     <div>
         <h2>Carica un file:</h2>
-        <input type="file" id="fileInput">
-        <button onclick="uploadFile()">Carica</button>
+        <form action="controller/upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Carica File" name="submit">
+        </form>
     </div>
 
-    <div>
-        <h2>Crea una nuova cartella:</h2>
-        <input type="text" id="folderName" placeholder="Nome cartella">
-        <button onclick="createFolder()">Crea</button>
-    </div>
-    <div>
-        <h2>Visualizza contenuto della cartella:</h2>
-        <select id="folderSelect">
-            <option value="" disabled selected>Seleziona una cartella</option>
-        </select>
-        <button onclick="showFolderContent()">Visualizza</button>
-    </div>
-    
-    <div id="folderContents">
-        <!-- Qui verrà visualizzato il contenuto della cartella -->
-    </div>
-    
-
-    <script src="scripts.js"></script>
 </body>
 </html>
