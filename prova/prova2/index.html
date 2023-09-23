@@ -14,26 +14,18 @@
         <button class="rotate" id="create-button">Crea</button>
         <button class="rotate">Upload</button>
         <button class="rotate">Elimina</button>
-        <button class="rotate" id="visualizza-button">Visualizza</button>
     </main>
+    <div id="folder-container" style="display: none;">
+        <img src="folder-icon.png" alt="Cartella" id="folder-icon">
+        <span id="folder-name"></span>
+    </div>
     <div id="create-modal" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close" id="close-button">&times;</span>
             <h2>Crea una nuova cartella</h2>
             <input type="text" id="folder-input" placeholder="Nome della cartella">
             <button id="save-button">Salva</button>
-            <button id="cancel-button">Annulla</button>
         </div>
-    </div>
-    <div id="success-popup" class="popup" style="display: none;">
-        Risorsa creata con successo!
-    </div>
-    <div id="error-popup" class="popup" style="display: none;">
-        Errore: la risorsa è già presente.
-    </div>
-    <div id="file-list-container" style="display: none;">
-        <h2>Elenco dei file</h2>
-        <ul id="file-list"></ul>
     </div>
     <footer>
         <div class="footer-content">

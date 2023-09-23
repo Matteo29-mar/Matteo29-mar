@@ -109,6 +109,37 @@ button:hover {
     background-color: #0056b3;
 }
 
+#cancel-button {
+    background-color: #ccc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#cancel-button:hover {
+    background-color: #999;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 255, 0, 0.8); /* Verde sfumato per successo */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 2;
+}
+
+#error-popup {
+    background-color: rgba(255, 0, 0, 0.8); /* Rosso sfumato per errore */
+}
+
 footer {
     background-color: #333;
     color: white;
