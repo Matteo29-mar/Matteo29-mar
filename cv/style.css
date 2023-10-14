@@ -1,0 +1,51 @@
+/* Stile di base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 200px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+section {
+    padding: 40px;
+}
+
+/* Stile specifico per le sezioni */
+.about-content, .project {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+/* Stile del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
