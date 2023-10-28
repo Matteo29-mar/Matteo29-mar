@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IfTechSolutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif; }
+        body, html { height: 100%; line-height: 1.8; }
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("../site/img/in6.jpg");
+            min-height: 100%;
+        }
+        .w3-bar .w3-button { padding: 16px; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button">SCOPO</a>
+            <a href="#chisiamo" class="w3-bar-item w3-button">CHI SIAMO</a>
+            <a href="#contact" class="w3-bar-item w3-button">CONTATTI</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">SCOPO</a>
+    <a href="#chisiamo" onclick="w3_close()" class="w3-bar-item w3-button">CHI SIAMO</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTATTI</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+        <h1 class="w3-jumbo w3-hide-small">La tecnologia è la nostra lingua, l'innovazione è il nostro mantra.</h1>
+        <p class="w3-large">Smettila di dire che non è possibile e affidati a noi.</p>
+        <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Scopri cosa possiamo fare</a></p>
+    </div> 
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding: 128px 16px" id="about">
+    <h3 class="w3-center">Il Nostro Scopo</h3>
+    <p class="w3-center">Cosa possiamo fare per i tuoi progetti:</p>
+
+    <ul class="w3-ul">
+        <li class="w3-padding-16">
+            <div class="w3-row">
+                <div class="w3-col w3-container" style="width: 20%;">
+                    <img src="img/ia.jpg" alt="Immagine 1" style="max-width: 100%;">
+                </div>
+                <div class="w3-col w3-container" style="width: 80%;">
+                    <p><strong>Machine Learning e Intelligenza Artificiale:</strong><br>
+                        L'uso di algoritmi di machine learning e AI sta rivoluzionando molte industrie, consentendo l'automazione, l'analisi dei dati avanzata, il riconoscimento di pattern e molto altro.</p>
+                </div>
+            </div>
+        </li>
+        <li class="w3-padding-16">
+            <div class="w3-row">
+                <div class="w3-col w3-container" style="width: 20%;">
+                    <img src="img/code.jpg" alt="Immagine 2" style="max-width: 100%;">
+                </div>
+                <div class="w3-col w3-container" style="width: 80%;">
+                    <p><strong>Microservizi:</strong><br>
+                        Questo approccio scompone le applicazioni in piccoli servizi indipendenti che possono essere sviluppati, testati e distribuiti in modo indipendente. Questo porta a una maggiore flessibilità e scalabilità.</p>
+                </div>
+            </div>
+        </li>
+        <li class="w3-padding-16">
+            <div class="w3-row">
+                <div class="w3-col w3-container" style="width: 20%;">
+                    <img src="img/docker.jpg" alt="Immagine 3" style="max-width: 100%;">
+                </div>
+                <div class="w3-col w3-container" style="width: 80%;">
+                    <p><strong>Containerization e Orchestrazione:</strong><br>
+                        Strumenti come Docker e Kubernetes semplificano la distribuzione e la gestione delle applicazioni, rendendo più agevole il deployment in ambienti cloud o on-premises.</p>
+                </div>
+            </div>
+        </li>
+        <li class="w3-padding-16">
+            <div class="w3-row">
+                <div class="w3-col w3-container" style="width: 20%;">
+                    <img src="img/iot.jpg" alt="Immagine 4" style="max-width: 100%;">
+                </div>
+                <div class="w3-col w3-container" style="width: 80%;">
+                    <p><strong>IoT (Internet of Things):</strong><br>
+                        L'espansione dei dispositivi connessi offre opportunità per applicazioni innovative in settori come casa intelligente, salute, industria e agricoltura.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- Chi siamo Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="chisiamo">
+    <h3>Chi Siamo</h3>
+    <p>Siamo un team di esperti dedicati all'innovazione tecnologica e alla creazione di soluzioni su misura per le tue esigenze.</p>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">Contatti</h3>
+    <p class="w3-center w3-large">Mettiamoci in contatto. Invia un messaggio:</p>
+    <div style="margin-top:48px">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Vercelli, IT</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefono: +39 389 9392634</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: mail@mail.com</p>
+        <br>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Nome" required name="Name"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Oggetto" required name="Subject"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Messaggio" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-black" type="submit">
+                    <i class="fa fa-paper-plane"></i> Invia messaggio
+                </button>
+            </p>
+        </form>
+        <!-- Image of location/map -->
+        <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Torna in alto</a>
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Realizzato con <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">W3.CSS</a></p>
+</footer>
+
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
